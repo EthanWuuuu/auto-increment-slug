@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @Slf4j
 public class AISConfigService {
 
-    private static final long CUSTOM_EPOCH = 1577808000000L;
+    private static final long CUSTOM_EPOCH = 1767196800000L;
     private static final int SEQUENCE_BITS = 8;
     private static final long SEQUENCE_MASK = (1L << SEQUENCE_BITS) - 1;
     private static final int ID_BITS = 43;
