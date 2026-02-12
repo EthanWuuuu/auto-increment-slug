@@ -1,0 +1,22 @@
+# Refer https://docs.halo.run/developer-guide/plugin/basics/manifest
+
+apiVersion: plugin.halo.run/v1alpha1
+kind: Plugin
+metadata:
+  # The name defines how the plugin is invoked, A unique name
+  name: auto-increment-slug
+spec:
+  enabled: true
+  requires: ">=2.22.0"
+  author:
+    name: EthanWu
+    website: https://github.com/EthanWu
+  logo: logo.png
+  homepage: https://github.com/EthanWu/auto-increment-slug#readme
+  repo: https://github.com/EthanWu/auto-increment-slug
+  issues: https://github.com/EthanWu/auto-increment-slug/issues
+  displayName: "auto-increment-slug"
+  description: "auto-increment-slug - Halo 插件"
+  license:
+    - name: "GPL-3.0"
+      url: "https://github.com/EthanWu/auto-increment-slug/blob/main/LICENSE"
