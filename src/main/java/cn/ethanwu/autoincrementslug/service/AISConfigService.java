@@ -13,10 +13,10 @@ public class AISConfigService {
     private static final long CUSTOM_EPOCH = 1577808000000L;
     private static final int SEQUENCE_BITS = 8;
     private static final long SEQUENCE_MASK = (1L << SEQUENCE_BITS) - 1;
-    private static final int ID_BITS = 40;
+    private static final int ID_BITS = 43;
     private static final long ID_MASK = (1L << ID_BITS) - 1;
-    private static final long OBFUSCATION_KEY = 0x1d5a1c2e9L;
-    private static final int SLUG_LENGTH = 12;
+    private static final long OBFUSCATION_KEY = 0x3a5d1c2e9L;
+    private static final int SLUG_LENGTH = 13;
 
     private final AtomicLong lastTimestamp = new AtomicLong(0L);
     private final AtomicInteger sequence = new AtomicInteger(0);
