@@ -37,5 +37,6 @@ tasks.withType(JavaCompile).configureEach {
 
 halo {
     version = '2.22'
+    debug = true
 }
 

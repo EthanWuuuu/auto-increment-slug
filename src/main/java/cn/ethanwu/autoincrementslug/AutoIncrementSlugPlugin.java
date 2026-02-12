@@ -1,5 +1,6 @@
 package cn.ethanwu.autoincrementslug;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import run.halo.app.plugin.BasePlugin;
 import run.halo.app.plugin.PluginContext;
@@ -13,6 +14,7 @@ import run.halo.app.plugin.PluginContext;
  * @since 1.0.0
  */
 @Component
+@Slf4j
 public class AutoIncrementSlugPlugin extends BasePlugin {
 
     public AutoIncrementSlugPlugin(PluginContext pluginContext) {
@@ -21,11 +23,12 @@ public class AutoIncrementSlugPlugin extends BasePlugin {
 
     @Override
     public void start() {
-        System.out.println("插件启动成功！");
+        log.info("自增 Slug 编号插件启动成功");
     }
 
     @Override
     public void stop() {
-        System.out.println("插件停止！");
+        log.info("自增 Slug 编号插件停止成功");
+
     }
 }

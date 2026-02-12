@@ -10,13 +10,10 @@ spec:
   requires: ">=2.22.0"
   author:
     name: EthanWu
-    website: https://github.com/EthanWu
+    website: https://github.com/EthanWuuuu
   logo: logo.png
-  homepage: https://github.com/EthanWu/auto-increment-slug#readme
-  repo: https://github.com/EthanWu/auto-increment-slug
-  issues: https://github.com/EthanWu/auto-increment-slug/issues
-  displayName: "auto-increment-slug"
-  description: "auto-increment-slug - Halo 插件"
-  license:
-    - name: "GPL-3.0"
-      url: "https://github.com/EthanWu/auto-increment-slug/blob/main/LICENSE"
+  homepage: https://github.com/EthanWuuuu/auto-increment-slug#readme
+  repo: https://github.com/EthanWuuuu/auto-increment-slug
+  issues: https://github.com/EthanWuuuu/auto-increment-slug/issues
+  displayName: "自增 Slug 数字编号"
+  description: "可以自动设置当前文章的 Slug 为根据时间递增的 12 位数字"
