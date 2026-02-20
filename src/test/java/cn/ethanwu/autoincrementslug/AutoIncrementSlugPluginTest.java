@@ -1,5 +1,6 @@
 package cn.ethanwu.autoincrementslug;
 
+import cn.ethanwu.autoincrementslug.service.AISConfigService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -20,5 +21,11 @@ class AutoIncrementSlugPluginTest {
     void contextLoads() {
         plugin.start();
         plugin.stop();
+    }
+
+    @Test
+    void test(){
+        AISConfigService service = new AISConfigService();
+        System.out.println(service.generateSlug());
     }
 }

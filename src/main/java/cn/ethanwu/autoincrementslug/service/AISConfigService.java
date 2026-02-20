@@ -17,6 +17,7 @@ public class AISConfigService {
     private static final long ID_MASK = (1L << ID_BITS) - 1;
     private static final long OBFUSCATION_KEY = 0x3a5d1c2e9L;
     private static final int SLUG_LENGTH = 13;
+    private static final long OBFUSCATION_OFFSET = 0x1A2B3C4D5L;
 
     private final AtomicLong lastTimestamp = new AtomicLong(0L);
     private final AtomicInteger sequence = new AtomicInteger(0);
@@ -64,7 +65,7 @@ public class AISConfigService {
 
     private String encodeId(long id) {
         long maskedId = id & ID_MASK;
-        long obfuscated = (maskedId ^ OBFUSCATION_KEY) & ID_MASK;
+        long obfuscated = (maskedId + OBFUSCATION_OFFSET) & ID_MASK;
         String decimal = Long.toUnsignedString(obfuscated, 10);
         if (decimal.length() >= SLUG_LENGTH) {
             return decimal.substring(decimal.length() - SLUG_LENGTH);
